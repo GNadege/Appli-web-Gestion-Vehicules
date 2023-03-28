@@ -1,0 +1,72 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');*/
+html{
+--lienoff:rgb(255, 255, 255);
+}
+body{
+	font-family: 'Oswald', sans-serif;
+	background-color: rgb(255, 255, 255);
+}
+.erreur{
+ color: red;
+}
+/* liens  */
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-image:
+    linear-gradient(var(--lien), var(--lienoff));
+  background-size: 100% 4px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s linear;
+}
+
+
+a:hover {
+  background-size: 0 2px, 100% 2px;
+}
+/* fin de liens */
+svg.lock{
+	display: inline-block;
+}
+h1:hover svg.lock{
+	stroke:rgb(181, 181, 181);
+}
+p[data-statut='1']{
+  color:rgb(142, 0, 0);
+
+}
+p[data-statut='1'] .lien{
+  visibility: hidden;
+  }
+/* formulaires */
+label{
+	display:inline-block;
+	width:7em;
+}
+input
+	{
+  width: 360px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 8px 6px;
+}
+input[type=submit]{
+	background: #aaa;
+	color :white;
+	margin-left:7em;
+	transition: all .2s;
+}
+input[type=submit]:hover{
+	background: white;
+	color :#aaa;
+}
+h2{
+  color: red;
+}
+
+	/* fin de formulaire */
